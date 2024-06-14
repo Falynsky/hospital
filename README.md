@@ -3,10 +3,14 @@ A private project created to learn new technologies and practice programming in 
 
 ## What do I plan to add?
 - [x] Database connection (PostgreSQL)
-- [ ] Swagger
-- [ ] Lombok
-- [ ] Liquibase
+- [x] Swagger
+- [x] Lombok
+- [x] Liquibase
 - [ ] Spring Security
+  - [x] JWT
+  - [ ] OAuth2
+  - [x] User roles
+  - [x] User privileges
 - [ ] Spring AOP
 - [ ] Spring Cache (Redis)
 - [ ] Docker integration
