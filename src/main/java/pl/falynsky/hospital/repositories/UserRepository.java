@@ -2,10 +2,10 @@ package pl.falynsky.hospital.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import pl.falynsky.hospital.entities.Users;
+import pl.falynsky.hospital.entities.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<Users, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
-    Users findByEmail(String email);
+    User findByEmail(String email);
 }

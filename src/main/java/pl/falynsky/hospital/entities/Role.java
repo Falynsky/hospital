@@ -1,10 +1,7 @@
 package pl.falynsky.hospital.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Collection;
 
@@ -12,6 +9,7 @@ import java.util.Collection;
 @NoArgsConstructor
 @Setter
 @Getter
+@Builder
 @Entity
 public class Role {
 
@@ -23,15 +21,14 @@ public class Role {
     private String name;
 
     @ManyToMany(mappedBy = "roles")
-    private Collection<Users> users;
+    private Collection<User> users;
 
     @ManyToMany
     @JoinTable(
             name = "privilege_role",
-            joinColumns = @JoinColumn(
-                    name = "role_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(
-                    name = "privilege_id", referencedColumnName = "id"))
+            joinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "privilege_id", referencedColumnName = "id")
+    )
     private Collection<Privilege> privileges;
 
     public Role(String name) {
