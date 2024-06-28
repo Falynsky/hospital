@@ -1,4 +1,4 @@
-package pl.falynsky.hospital.entities;
+package pl.falynsky.hospital_authorization_service.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

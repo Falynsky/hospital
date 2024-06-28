@@ -1,4 +1,4 @@
-package pl.falynsky.hospital.auth.jwt;
+package pl.falynsky.hospital_authorization_service.auth.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

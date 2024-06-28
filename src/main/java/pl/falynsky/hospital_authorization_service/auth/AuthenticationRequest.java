@@ -1,4 +1,4 @@
-package pl.falynsky.hospital.auth;
+package pl.falynsky.hospital_authorization_service.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

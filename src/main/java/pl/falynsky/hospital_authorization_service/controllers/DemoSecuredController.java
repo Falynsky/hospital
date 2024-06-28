@@ -1,4 +1,4 @@
-package pl.falynsky.hospital.controllers;
+package pl.falynsky.hospital_authorization_service.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/securedDemo")
 public class DemoSecuredController {
 
-    @RequestMapping("/hello")
+    @RequestMapping("/1")
     public String hello() {
-        return "Hello, secured!";
+        return "1, secured!";
     }
 
-    @RequestMapping("/bye")
+    @RequestMapping("/2")
     public String bye() {
-        return "Bye, secured!";
+        return "2, secured!";
     }
 }

@@ -1,4 +1,4 @@
-package pl.falynsky.hospital;
+package pl.falynsky.hospital_authorization_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,15 +1,15 @@
-package pl.falynsky.hospital.auth;
+package pl.falynsky.hospital_authorization_service.auth;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import pl.falynsky.hospital.entities.Role;
-import pl.falynsky.hospital.entities.User;
-import pl.falynsky.hospital.repositories.RoleRepository;
-import pl.falynsky.hospital.repositories.UserRepository;
-import pl.falynsky.hospital.auth.jwt.JwtService;
+import pl.falynsky.hospital_authorization_service.entities.Role;
+import pl.falynsky.hospital_authorization_service.entities.User;
+import pl.falynsky.hospital_authorization_service.repositories.RoleRepository;
+import pl.falynsky.hospital_authorization_service.repositories.UserRepository;
+import pl.falynsky.hospital_authorization_service.auth.jwt.JwtService;
 
 import java.util.List;
 

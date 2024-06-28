@@ -1,4 +1,4 @@
-package pl.falynsky.hospital.auth.jwt;
+package pl.falynsky.hospital_authorization_service.auth.jwt;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -15,7 +15,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import pl.falynsky.hospital.services.CustomUserDetailsService;
+import pl.falynsky.hospital_authorization_service.services.CustomUserDetailsService;
 
 import java.io.IOException;
 

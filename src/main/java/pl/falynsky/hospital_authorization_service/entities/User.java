@@ -1,4 +1,4 @@
-package pl.falynsky.hospital.entities;
+package pl.falynsky.hospital_authorization_service.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,11 +28,16 @@ public class User implements UserDetails {
 
     @Column(name = "firstname")
     private String firstName;
+
     @Column(name = "lastname")
     private String lastName;
+
     private String email;
+
     private String password;
+
     private boolean enabled;
+
     @Column(name = "tokenexpired")
     private boolean tokenExpired;
 

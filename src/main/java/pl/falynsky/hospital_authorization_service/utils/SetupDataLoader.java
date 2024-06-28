@@ -1,4 +1,4 @@
-package pl.falynsky.hospital.utils;
+package pl.falynsky.hospital_authorization_service.utils;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -6,10 +6,10 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import pl.falynsky.hospital.entities.Privilege;
-import pl.falynsky.hospital.entities.Role;
-import pl.falynsky.hospital.repositories.PrivilegeRepository;
-import pl.falynsky.hospital.repositories.RoleRepository;
+import pl.falynsky.hospital_authorization_service.entities.Privilege;
+import pl.falynsky.hospital_authorization_service.entities.Role;
+import pl.falynsky.hospital_authorization_service.repositories.PrivilegeRepository;
+import pl.falynsky.hospital_authorization_service.repositories.RoleRepository;
 
 import java.util.Collection;
 import java.util.List;

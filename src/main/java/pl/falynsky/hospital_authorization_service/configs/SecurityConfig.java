@@ -1,4 +1,4 @@
-package pl.falynsky.hospital.configs;
+package pl.falynsky.hospital_authorization_service.configs;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +10,7 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import pl.falynsky.hospital.auth.jwt.JwtConfig;
+import pl.falynsky.hospital_authorization_service.auth.jwt.JwtConfig;
 
 @RequiredArgsConstructor
 @EnableWebSecurity
@@ -19,8 +19,6 @@ public class SecurityConfig {
 
     private static final String[] AUTH_WHITELIST = {
             "/demo/**",
-
-            // auth
             "/auth/**",
 
             //swagger UI v3
