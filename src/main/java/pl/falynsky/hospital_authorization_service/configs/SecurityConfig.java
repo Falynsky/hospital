@@ -18,8 +18,7 @@ import pl.falynsky.hospital_authorization_service.auth.jwt.JwtConfig;
 public class SecurityConfig {
 
     private static final String[] AUTH_WHITELIST = {
-            "/demo/**",
-            "/auth/**",
+            "/api/v1/auth/**",
 
             //swagger UI v3
             "/v3/api-docs/**",
